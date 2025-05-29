@@ -1,0 +1,12 @@
+[package]
+name = "todo-ai-assistant"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+slint = "0.2"  # UI framework
+reqwest = { version = "0.11", features = ["json"] }  # HTTP client for server communication
+tokio = { version = "1", features = ["full"] }  # Asynchronous runtime
+serde = { version = "1.0", features = ["derive"] }  # Serialization/deserialization
+serde_json = "1.0"  # JSON support
+modelscope = "0.1"  # AI inference API client (hypothetical)
